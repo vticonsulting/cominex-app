@@ -1,0 +1,33 @@
+{
+  "recommendations": [
+    "antfu.browse-lite",
+    "antfu.file-nesting",
+    "antfu.goto-alias",
+    "antfu.iconify",
+    "antfu.smart-clicks",
+    "antfu.unocss",
+    "antfu.vite",
+    "antfu.where-am-i",
+    "antsteyer.vue-property-decorator-snippets",
+    "austenc.tailwind-docs",
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
+    "DavidAnson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "heybourn.headwind",
+    "ms-vscode.live-server",
+    "nuxt.mdc",
+    "Prisma.prisma",
+    "rangav.vscode-thunder-client",
+    "ritwickdey.LiveServer",
+    "streetsidesoftware.code-spell-checker",
+    "stylelint.vscode-stylelint",
+    "vue.volar"
+  ],
+  "unwantedRecommendations": [
+    "octref.vetur"
+  ]
+}

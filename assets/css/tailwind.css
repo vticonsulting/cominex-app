@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');*/
+@import './markdown.css';
+
+html.dark {
+  background: #121212;
+}
+
+body {
+  @apply min-h-screen;
+}
+
+#__nuxt {
+  @apply w-full flex flex-col;
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: rgb(13,148,136);
+  opacity: 0.75;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  [type='text'],
+  [type='email'],
+  [type='url'],
+  [type='password'],
+  [type='number'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  textarea,
+  select {
+    @apply mt-1 w-full border-gray-300  focus:border-primary-500 focus:ring-primary-500;
+  }
+
+  [type='checkbox'],
+  [type='radio'] {
+    @apply w-5 h-5  focus:outline-none focus:ring-primary-500 text-primary-500;
+  }
+  [type='checkbox'] {
+    @apply rounded;
+  }
+  [type='radio'] {
+    @apply rounded-full;
+  }
+}
+
+.btn {
+  @apply bg-primary-500 hover:bg-primary-600 focus:bg-primary-600 text-white font-bold py-2 px-4 rounded;
+}
+
+[data-v-tippy] {
+  padding: 0 0.25rem;
+  cursor: pointer;
+}
+.tippy-box[data-theme~="light"] {
+  border-radius: 10px !important;
+  box-shadow: 0 0 20px 4px rgb(168 183 219 / 15%), 0 4px 80px -8px rgb(144 157 179 / 25%),
+    0 4px 4px -2px rgb(251 251 251 / 15%) !important;
+}
+
+/* .rainbow-text {
+	@apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-pink-600;
+}
+.rainbow-bg {
+	@apply bg-gradient-to-r from-primary to-pink-600;
+} */
+
+/* .page-enter-active,
+.page-leave-active {
+	transition: all 0.3s ease-in-out;
+}
+
+.page-enter-from,
+.page-leave-to {
+	opacity: 0;
+	transform: scale(0.99);
+} */
+
+
+.debug-baseline {
+  /* // Demonstrate the vertical rhythm at 12px */
+  background-image: linear-gradient(#eef 1px, transparent 1px);
+  background-size: 100% 12px;
+  background-repeat: repeat-y;
+}
